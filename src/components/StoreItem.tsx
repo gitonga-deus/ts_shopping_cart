@@ -16,17 +16,17 @@ export const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
 			<Card.Img
 				variant="top"
 				src={imgUrl}
-				height="200px"
+				height="320px"
 				style={{ objectFit: "cover" }}
 			/>
 			<Card.Body className="d-flex flex-column">
 				<Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
-					<span className="fs-2">{name}</span>
+					<span className="fs-5">{name}</span>
 					<span className="ms-2 text-muted">{formatCurrency(price)}</span>
 				</Card.Title>
 				<div className="mt-auto">
 					{quantity === 0 ? (
-						<Button className="w-100">+ Add To Cart</Button>
+						<Button className="w-100 btn-secondary">+ Add To Cart</Button>
 					) : (
 						<div className="d-flex align-items-center flex-column" style={{
 							gap: "0.5rem"
@@ -34,16 +34,15 @@ export const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
 							<div className="d-flex align-items-center justify-content-center" style={{
 								gap: ".5rem"
 							}}>
-								<Button>-</Button>
+								<Button className="btn-secondary">-</Button>
 								<div>
 									<span className="fs-3">{quantity}</span> in cart
 								</div>
-								<Button>+</Button>
+								<Button className="btn-secondary">+</Button>
 							</div>
 							<Button variant="danger" size="sm">Remove</Button>
 						</div>
-					)
-					}
+					)}
 				</div>
 			</Card.Body>
 		</Card>

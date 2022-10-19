@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom"
 // Pages
 import { Home } from "./pages/Home"
 import { About } from "./pages/About"
-import { Store } from "./pages/Store"
+import { Shorts } from "./pages/Shorts"
+import { Hoods } from "./pages/Hoods"
 
 // Components
 import { Navbar } from "./components/Navbar"
@@ -19,7 +20,8 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
-					<Route path="/store" element={<Store />} />
+					<Route path="/shorts" element={<Shorts />} />
+					<Route path="/hoods" element={<Hoods />} />
 				</Routes>
 			</Container>
 		</>

@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"name": "Book",
+		"price": 10.99,
+		"imgUrl": "/imgs/red.webp"
+	},
+	{
+		"id": 1,
+		"name": "Book",
+		"price": 10.99,
+		"imgUrl": "/imgs/blue.webp"
+	},
+	{
+		"id": 1,
+		"name": "Book",
+		"price": 10.99,
+		"imgUrl": "/imgs/white.webp"
+	}
+]
