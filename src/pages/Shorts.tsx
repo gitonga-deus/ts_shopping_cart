@@ -1,12 +1,12 @@
 import { StoreItem } from "../components/StoreItem"
 
-import { Row, Col, Card } from "react-bootstrap"
-import storeItems from "../data/items.json"
+import { Row, Col } from "react-bootstrap"
+import storeItems from "../data/shirts.json"
 
-export const Store = () => {
+export const Shorts = () => {
 	return (
 		<>
-			<h1>Store</h1>
+			<h1>Shorts</h1>
 			<Row md={2} xs={1} lg={3} className="g-3">
 				{storeItems.map((item) => (
 					<Col key={item.id}>
