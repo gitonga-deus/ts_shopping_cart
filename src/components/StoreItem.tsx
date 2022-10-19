@@ -10,14 +10,14 @@ type StoreItemProps = {
 }
 
 export const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
-	const quantity: number = 0
+	const quantity: number = 2
 	return (
 		<Card className="h-100">
 			<Card.Img
 				variant="top"
 				src={imgUrl}
-				height="320px"
-				style={{ objectFit: "cover" }}
+				height="300px"
+				style={{ objectFit: "cover"}}
 			/>
 			<Card.Body className="d-flex flex-column">
 				<Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
